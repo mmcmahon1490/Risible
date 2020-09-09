@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './App.css';
 import './Styles/Header.css'
 import Header from './Components/Header';
@@ -9,10 +10,12 @@ import CreatePostForm from './Components/CreatePostForm';
 import ReadArticle from './Components/ReadArticle';
 
 function App() {
+  
+
   return (
     <div className="App">
       <Header />
-      <Article />
+      <Article/>
       <Footer />
       <CreatePostForm />
       <ReadArticle />
