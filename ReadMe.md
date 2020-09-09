@@ -9,6 +9,9 @@
 - Post stories of their own, that other users will be able to interact with. 
 
 
+
+*** Edit the wireframes, make wireframes and component hierarchy visible to the public (or post as an image) ***
+
 ### Wireframes: https://app.diagrams.net/#LRisible
 
 ### Component Heirarchy: https://app.diagrams.net/#LComponent-Tree
