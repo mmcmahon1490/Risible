@@ -1,0 +1,42 @@
+
+
+h1 {
+  background-color: blue;
+}
+
+h2 {
+  background-color: green;
+}
+
+h4 {
+  background-color: yellow;
+}
+
+h5 {
+  background-color: orange;
+}
+
+p {
+  background-color: red;
+}
+
+button {
+  background-color: purple;
+}
+
+#footer {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  margin: 0 11px 0 0;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
