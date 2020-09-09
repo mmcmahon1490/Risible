@@ -6,8 +6,8 @@ const Article = () => {
 
   useEffect(() => {
     const getArticles = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/risible?Grid%20View`
-      const response = await axios.get(airtableURL), {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/risible`
+      const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
@@ -17,9 +17,24 @@ const Article = () => {
     getArticles();
   }, []);
 
+  // 
+  
+
+
+  // console.log(articles[1].fields.article)
+
   return (
     <div>
-      <h4>Article</h4>
+      {articles.map((single, index) => {
+        return (
+          <>
+          <h4 key={index}>{single.fields.Description}</h4>
+          <h4>{single.fields.Article}</h4>
+          <h4>{single.fields.Description}</h4>
+          </>
+        )
+      })}
+      <h4>go cats</h4>
     </div>
   )
 
