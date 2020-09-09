@@ -28,13 +28,11 @@ const Article = () => {
       {articles.map((single, index) => {
         return (
           <>
+          <a href key={index}>{single.fields.Article}</a>
           <h4 key={index}>{single.fields.Description}</h4>
-          <h4>{single.fields.Article}</h4>
-          <h4>{single.fields.Description}</h4>
           </>
         )
       })}
-      <h4>go cats</h4>
     </div>
   )
 
