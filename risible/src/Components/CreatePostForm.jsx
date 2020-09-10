@@ -56,20 +56,32 @@ const CreatePostForm = (props) => {
   // )
 
   return (
-    <div>
+    // <div>
+    // <form onSubmit={handleSubmit}>
+    //   <label htmlFor='link'>link</label>
+    //   <input class='lnk' placeholder='enter link' />
+    //   <label htmlFor='description'>description</label>
+    //   <input class='dsc' placeholder='enter description' />
+    //   <label htmlFor='user'>user</label>
+    //   <input class='usr' placeholder='enter username' />
+    //   <label htmlFor='date'>date</label>
+    //   <input class='dte' placeholder='enter date' />
+    //   <button type='submit' class='submit-post'>submit</button>
+    // </form>
+    
+    // </div>
+
     <form onSubmit={handleSubmit}>
       <label htmlFor='link'>link</label>
-      <input class='lnk' placeholder='enter link' />
-      <label htmlFor='description'>description</label>
-      <input class='dsc' placeholder='enter description' />
-      <label htmlFor='user'>user</label>
-      <input class='usr' placeholder='enter username' />
-      <label htmlFor='date'>date</label>
-      <input class='dte' placeholder='enter date' />
-      <button type='submit' class='submit-post'>submit</button>
+      <input
+        class='lnk'
+        name='link'
+        type='text'
+        value={link}
+        onClick={(event) => setLink(event.target.value)}
+      />
+      <button type='submit'>submit</button>
     </form>
-    
-    </div>
     
     
   )
