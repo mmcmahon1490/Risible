@@ -78,7 +78,7 @@ const CreatePostForm = (props) => {
         name='link'
         type='text'
         value={link}
-        onClick={(event) => setLink(event.target.value)}
+        onChange={(event) => setLink(event.target.value)}
       />
       <button type='submit'>submit</button>
     </form>

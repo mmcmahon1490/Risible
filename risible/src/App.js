@@ -8,7 +8,7 @@ import Article from './Components/Article';
 import Footer from './Components/Footer';
 import CreatePostForm from './Components/CreatePostForm';
 import ReadArticle from './Components/ReadArticle';
-import VoteButton from './Components/VoteButton'
+import VoteButton from './Components/VoteButton';
 
 function App() {
   
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Article/>
-      <CreatePostForm />
+      <CreatePost />
       <ReadArticle />
       <Footer />
     </div>
