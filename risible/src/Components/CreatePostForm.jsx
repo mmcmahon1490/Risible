@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from './Footer';
 import axios from 'axios';
 
-const CreatePostForm = () => {
+const CreatePostForm = (props) => {
   const [link, setLink] = useState('');
   const [description, setDescription] = useState('');
   const [user, setUser] = useState('');
@@ -28,6 +28,11 @@ const CreatePostForm = () => {
         },
       }
     );
+    props.setFetchPosts(!props.fetchPosts);
+    setLink('');
+    setDescription('');
+    setUser('');
+    setDate('');
   }
   
   return (
