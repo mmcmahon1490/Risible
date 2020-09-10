@@ -34,7 +34,7 @@ a {
   margin: 0 11px 0 0;
 }
 
-#header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,4 +65,18 @@ a {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+}
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.header .countainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

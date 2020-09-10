@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import './Styles/Header.css'
-import Header from './Components/Header';
+import MainPage from './Components/MainPage';
 import CreatePost from './Components/CreatePost';
 import Article from './Components/Article';
 import Footer from './Components/Footer';
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       { posts && 
-        <Header posts={posts}/>
+        <MainPage posts={posts}/>
       }
       <Article/>
       <CreatePostForm fetchPost={fetchPost} setFetchPost={setFetchPost}/>

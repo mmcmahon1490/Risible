@@ -24,6 +24,5 @@ VoteButton
 Tokens
 1. Switches
 2. VoteButton
-3. airtable
-4. 
 
+convert "create post" button to be a link to the "CreatePostForm" Component

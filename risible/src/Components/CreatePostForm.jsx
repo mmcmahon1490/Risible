@@ -44,7 +44,7 @@ const CreatePostForm = (props) => {
       <input
         class='lnk'
         name='link'
-        type='text'
+        type='link'
         value={link}
         onChange={(event) => setLink(event.target.value)}
         />
@@ -52,7 +52,7 @@ const CreatePostForm = (props) => {
       <input
         class='dsc'
         name='description'
-        type='text'
+        type='tdescription'
         value={description}
         onChange={(event) => setDescription(event.target.value)}
         />
@@ -60,7 +60,7 @@ const CreatePostForm = (props) => {
         <input
           class='usr'
           name='author'
-          type='text'
+          type='author'
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
         />
@@ -68,7 +68,7 @@ const CreatePostForm = (props) => {
         <input
           class='dte'
           name='date'
-          type='text'
+          type='date'
           value={date}
           onChange={(event) => setDate(event.target.value)}
         />
