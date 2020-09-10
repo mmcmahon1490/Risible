@@ -33,7 +33,7 @@ const CreatePost = (props) => {
 
   return (
     <div>
-      <form>
+      {/* <form>
       <label htmlFor='link'>link</label>
       <input
         class='lnk'
@@ -69,7 +69,7 @@ const CreatePost = (props) => {
         
         <button onClick={handleSubmit}
           type='submit'>submit</button>
-    </form>
+    </form> */}
     </div>
   )
 
