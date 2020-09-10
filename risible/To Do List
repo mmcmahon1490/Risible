@@ -1,0 +1,29 @@
+Header
+1. Style everything
+2. Switch for Create Post
+3. Switch for ReadArticle
+
+CreatePostForm
+1. Style everything
+2. Connect my airtable api so that it works both ways
+3. Switch to return to home page
+
+ReadArticle
+1. Style everything
+2. Enable hyperlink
+3. Comment section
+4. Switch to return to home page
+
+Footer
+1. Style everything
+
+VoteButton
+1. Make it work
+
+
+Tokens
+1. Switches
+2. VoteButton
+3. airtable
+4. 
+

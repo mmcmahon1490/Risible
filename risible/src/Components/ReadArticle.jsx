@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 const ReadArticle = () => {
   
@@ -7,7 +6,6 @@ const ReadArticle = () => {
     <div>
       <p>Article Name</p>
       <p>Article Link</p>
-      <Footer />
     </div>
   )
 
