@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Route } from 'react-router-dom'
 import './App.css';
 import './Styles/Header.css'
 import MainPage from './Components/MainPage';
-import CreatePost from './Components/CreatePost';
 import Article from './Components/Article';
 import Footer from './Components/Footer';
 import CreatePostForm from './Components/CreatePostForm';
-import ReadArticle from './Components/ReadArticle';
-import VoteButton from './Components/VoteButton';
 
 function App() {
     const [posts, setPosts] = useState('');
@@ -36,9 +34,11 @@ function App() {
       { posts && 
         <MainPage posts={posts}/>
       }
-      <Article/>
-      <CreatePostForm fetchPost={fetchPost} setFetchPost={setFetchPost}/>
-      <ReadArticle />
+      
+      <Article />
+      <Route exact path='/create-post'>
+        <CreatePostForm fetchPost={fetchPost} setFetchPost={setFetchPost} />
+      </Route>
       <Footer />
     </div>
   );

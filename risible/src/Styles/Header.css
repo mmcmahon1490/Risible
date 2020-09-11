@@ -1,30 +1,6 @@
 
 
-h1 {
-  background-color: blue;
-}
-
-h2 {
-  background-color: green;
-}
-
-h4 {
-  background-color: yellow;
-}
-
-h5 {
-  background-color: orange;
-}
-
-p {
-  background-color: red;
-}
-
-button {
-  background-color: purple;
-}
-
-#footer {
+/* #footer {
   background-color: teal;
   display: flex;
   justify-content: center;
@@ -34,21 +10,10 @@ a {
   margin: 0 11px 0 0;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
 
-
-
-
-.form {
-  padding: 16px;
-}
 
 .lnk, .dsc, .usr, .dte {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -67,11 +32,17 @@ a {
   opacity: 0.9;
 }
 
+.header {
+  
+}
+
 .container {
-  width: 960px;
-  max-width: 100%;
+  display: flex;
+  width: 900px;
+  max-width: 95%;
   padding: 20px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .header .countainer {
@@ -79,4 +50,111 @@ a {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.container button {
+  justify-content: right;
+}
+
+
+.create-post {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0 10px 0;
+  width: 95%;
+}
+
+.create-post form {
+  background-color: slategray;
+  border: 3px solid black;
+  color: white;
+  width: 50%;
+} */
+
+* {
+  background-color: navy;
+}
+
+
+.header {
+  align-items: start;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  padding: 2vh;
+}
+
+.header h1 {
+  color: white;
+  background-color: gray;
+}
+
+.header p {
+  background-color: gray;
+  color: rgb(82, 65, 189);
+  margin: -2.5vh 4vh 0;
+}
+
+.container h2 {
+ color: white;
+ padding: 7vh 0 3vh;
+}
+
+.posts {
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+ a {
+   color: white;
+  display: flex;
+}
+
+.create-post {
+  color: white;
+  border: 3px solid black;
+  padding: -3px 0 px;
+}
+
+.lnk, .dsc, .usr, .dte {
+  background-color: slategray;
+  color: rgb(38, 22, 143);
+  font-weight: bold;
+  margin: 1vh;
+}
+
+button {
+  background-color: rgb(194, 101, 101);
+  color: white;
+  margin: 3px 0 9px;
+  padding: 4px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 400px) {
+  .header h1 {
+    color: black;
+  }
+
+  .posts {
+    max-width: 40%;
+  }
+
+  .posts a {
+    max-width: 130px;
+  }
 }

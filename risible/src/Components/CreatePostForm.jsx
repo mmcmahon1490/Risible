@@ -7,6 +7,8 @@ const CreatePostForm = (props) => {
   const [author, setAuthor] = useState('');
   const [date, setDate] = useState('');
 
+  console.log(props)
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const fields = {
@@ -38,9 +40,10 @@ const CreatePostForm = (props) => {
   
 
   return (
-    <div>
+    <div class='create-post'>
+      <h1>create post</h1>
       <form onSubmit={handleSubmit}>
-      <label htmlFor='link'>link</label>
+      <label htmlFor='link'>link: </label>
       <input
         class='lnk'
         name='link'
@@ -48,7 +51,8 @@ const CreatePostForm = (props) => {
         value={link}
         onChange={(event) => setLink(event.target.value)}
         />
-        <label htmlFor='description'>description</label>
+        <br />
+        <label htmlFor='description'>description: </label>
       <input
         class='dsc'
         name='description'
@@ -56,7 +60,8 @@ const CreatePostForm = (props) => {
         value={description}
         onChange={(event) => setDescription(event.target.value)}
         />
-        <label htmlFor='author'>username</label>
+        <br />
+        <label htmlFor='author'>username: </label>
         <input
           class='usr'
           name='author'
@@ -64,7 +69,8 @@ const CreatePostForm = (props) => {
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
         />
-        <label htmlFor='date'>date</label>
+        <br />
+        <label htmlFor='date'>date: </label>
         <input
           class='dte'
           name='date'
@@ -72,7 +78,7 @@ const CreatePostForm = (props) => {
           value={date}
           onChange={(event) => setDate(event.target.value)}
         />
-        
+        <br />
         <button
           type='submit'>submit</button>
     </form>

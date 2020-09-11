@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+// import axios from 'axios';
 
 const CreatePost = (props) => {
-  const [link, setLink] = useState('');
-  const [description, setDescription] = useState('');
-  const [author, setAuthor] = useState('');
-  const [date, setDate] = useState();
+  // const [link] = useState('');
+  // const [description] = useState('');
+  // const [author] = useState('');
+  // const [date] = useState();
   
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const fields = {
-      link,
-      description,
-      author,
-      date
-    };
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const fields = {
+  //     link,
+  //     description,
+  //     author,
+  //     date
+  //   };
 
-    const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/risible`;
+  //   const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/risible`;
 
-    console.log({fields})
+  //   console.log({fields})
 
-    await axios.post(baseURL, { fields },
-      {
-        headers: {
-          'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-          'Content-Type': 'application/json',
-        },
-      }
-    );
-  }
+  //   await axios.post(baseURL, { fields },
+  //     {
+  //       headers: {
+  //         'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+  //         'Content-Type': 'application/json',
+  //       },
+  //     }
+  //   );
+  // }
 
   return (
     <div>

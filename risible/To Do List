@@ -5,7 +5,6 @@ Header
 
 CreatePostForm
 1. Style everything
-2. Connect my airtable api so that it works both ways
 3. Switch to return to home page
 
 ReadArticle
@@ -26,3 +25,18 @@ Tokens
 2. VoteButton
 
 convert "create post" button to be a link to the "CreatePostForm" Component
+
+
+
+
+
+5s
+9m
+
+
+
+
+
+
+
+
