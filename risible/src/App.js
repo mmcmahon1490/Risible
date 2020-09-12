@@ -7,6 +7,8 @@ import MainPage from './Components/MainPage';
 import Article from './Components/Article';
 import Footer from './Components/Footer';
 import CreatePostForm from './Components/CreatePostForm';
+import Header from './Components/Header';
+import NavBar from './Components/NavBar'
 
 function App() {
     const [posts, setPosts] = useState('');
@@ -31,11 +33,14 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
+      <Route exact path='/main-page'>
+        
       { posts && 
         <MainPage posts={posts}/>
       }
-      
-      <Article />
+        <Article />
+        </Route>
       <Route exact path='/create-post'>
         <CreatePostForm fetchPost={fetchPost} setFetchPost={setFetchPost} />
       </Route>
