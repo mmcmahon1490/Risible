@@ -8,6 +8,7 @@ import Article from './Components/Article';
 import Footer from './Components/Footer';
 import CreatePostForm from './Components/CreatePostForm';
 import Header from './Components/Header';
+import ContactInformation from './Components/ContactInformation';
 
 function App() {
     const [posts, setPosts] = useState('');
@@ -42,6 +43,9 @@ function App() {
         </Route>
       <Route exact path='/create-post'>
         <CreatePostForm fetchPost={fetchPost} setFetchPost={setFetchPost} />
+      </Route>
+      <Route exact path='/contact-information'>
+        <ContactInformation />
       </Route>
       <Footer />
     </div>
