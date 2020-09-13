@@ -3,7 +3,7 @@ import React from 'react';
 const CreatePost = (props) => {
 
   return (
-  <div class='posts'>
+  <div className='posts'>
       {
         props.posts.records.map((post) => (
         <p>{post.fields.description}</p>

@@ -77,7 +77,6 @@ a {
   background-color: navy;
 }
 
-
 .header {
   align-items: flex-start;
   background-color: gray;
@@ -103,6 +102,8 @@ a {
  padding: 7vh 0 3vh;
 }
 
+
+
 .posts {
   border: 2px solid black;
   color: white;
@@ -121,6 +122,10 @@ a {
 .create-post {
   color: white;
   border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 40%;
   padding: -3px 0 px;
 }
 
@@ -139,9 +144,12 @@ button {
 }
 
 #footer {
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  left: 0;
   margin: auto;
+  position: absolute;
   width: 80%;
 }
 
@@ -162,3 +170,17 @@ button {
 Link {
   color: white;
 }
+
+.NavBar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-information {
+  color: white;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 5px;
+}
+

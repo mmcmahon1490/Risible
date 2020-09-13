@@ -4,7 +4,7 @@ const MainPage = (props) => {
 
   return (
   <div className='body'>
-    <div className='posts'>
+    <div className='post-display'>
         {
           props.posts.records.map((post) => {
             return (
