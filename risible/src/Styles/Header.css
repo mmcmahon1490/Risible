@@ -79,7 +79,7 @@ a {
 
 
 .header {
-  align-items: start;
+  align-items: flex-start;
   background-color: gray;
   display: flex;
   flex-direction: column;
@@ -157,4 +157,8 @@ button {
   .posts a {
     max-width: 130px;
   }
+}
+
+Link {
+  color: white;
 }

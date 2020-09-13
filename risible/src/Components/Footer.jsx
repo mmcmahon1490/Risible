@@ -4,6 +4,7 @@ const Footer = () => {
 
   return (
     <div>
+      
       <div id="footer">
       <a href>contact information</a>
       <br />
@@ -16,6 +17,7 @@ const Footer = () => {
     </div>
   )
 }
+
 
 
 export default Footer;

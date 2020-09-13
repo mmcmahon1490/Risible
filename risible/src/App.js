@@ -8,7 +8,6 @@ import Article from './Components/Article';
 import Footer from './Components/Footer';
 import CreatePostForm from './Components/CreatePostForm';
 import Header from './Components/Header';
-import NavBar from './Components/NavBar'
 
 function App() {
     const [posts, setPosts] = useState('');
