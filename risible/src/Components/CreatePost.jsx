@@ -26,7 +26,6 @@ const CreatePost = (props) => {
       }
     </div>
   )
-
 }
 
 export default CreatePost;

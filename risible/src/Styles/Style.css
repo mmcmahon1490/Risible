@@ -115,8 +115,14 @@ a {
 }
 
  a {
-   color: white;
+  color: white;
   display: flex;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
 }
 
 .create-post {
@@ -153,20 +159,6 @@ button {
   width: 80%;
 }
 
-@media screen and (max-width: 400px) {
-  .header h1 {
-    color: black;
-  }
-
-  .posts {
-    max-width: 40%;
-  }
-
-  .posts a {
-    max-width: 130px;
-  }
-}
-
 Link {
   color: white;
 }
@@ -184,3 +176,38 @@ Link {
   padding: 5px;
 }
 
+@media only screen and (max-width: 780px) {
+  .NavBar a {
+      color: orangered;
+  }
+
+  .post-display a {
+    font-size: 60%;
+  }
+
+  .post-display p {
+    font-size: 75%;
+  }
+
+  #footer a {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .NavBar a {
+      color: orangered;
+  }
+
+  .post-display a {
+    font-size: 60%;
+  }
+
+  .post-display p {
+    font-size: 75%;
+  }
+
+  #footer a {
+    font-size: 70%;
+  }
+}

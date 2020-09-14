@@ -84,20 +84,6 @@ const CreatePostForm = (props) => {
     </form>
     </div>
   )
-
-  //   <form onSubmit={handleSubmit}>
-  //     <label htmlFor='link'>link</label>
-  //     <input
-  //       class='lnk'
-  //       name='link'
-  //       type='text'
-  //       value={link}
-  //       onChange={(event) => setLink(event.target.value)}
-  //     />
-  //     <button type='submit'>submit</button>
-  //   </form>
-  // )
-
 }
 
 export default CreatePostForm;

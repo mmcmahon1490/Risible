@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Route } from 'react-router-dom'
 import './App.css';
-import './Styles/Header.css'
+import './Styles/Style.css'
 import MainPage from './Components/MainPage';
 import Article from './Components/Article';
 import Footer from './Components/Footer';

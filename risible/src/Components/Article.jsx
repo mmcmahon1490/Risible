@@ -17,25 +17,18 @@ const Article = () => {
     getArticles();
   }, []);
 
-  // 
-  
-
-
-  // console.log(articles[1].fields.article)
-
   return (
     <div>
       {articles.map((single, index) => {
         return (
           <>
-          <a href key={index}>{single.fields.Article}</a>
-          <h4 key={index}>{single.fields.Description}</h4>
+            <a href key={index}>{single.fields.Article}</a>
+            <h4 key={index}>{single.fields.Description}</h4>
           </>
         )
       })}
     </div>
   )
-
 }
 
 export default Article;
